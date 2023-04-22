@@ -1,11 +1,19 @@
 #!/usr/bin/python3
 
-"""A module that defines a class with inherited list"""
+"""
+This module contains function that checks if the object
+pased is exactly an instance of the specified class
+"""
 
 
-class MyList:
-    """THis class inherit the default list class"""
-
-    def print_sorted(self):
-        """Print a list in sorted ascending order."""
-        print(sorted(self))
+def is_same_class(obj, a_class):
+    """Checks if object is exactly an instance of specified
+    class
+    Args:
+        obj: The object to check
+        a_class: The specified class
+    Return:
+        True: If obj is exactly and instance
+        False: If otherwise
+    """
+    return type(obj) == a_class
