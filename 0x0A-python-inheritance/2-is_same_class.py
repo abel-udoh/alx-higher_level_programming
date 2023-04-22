@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-A module that contains a function
+This module contains function that checks if the object
+pased is exactly an instance of the specified class
 """
 
 
