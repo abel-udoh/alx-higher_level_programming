@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-A module with a function that reads a text file.
+This module contains functions that reads a text file and prints
+it to stdout
 """
 
 
