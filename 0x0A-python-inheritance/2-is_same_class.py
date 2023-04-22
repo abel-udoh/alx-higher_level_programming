@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 """
-A module that contains a function that returns True if
-the object is exactly an instance
+A module that contains a function
 """
 
 
