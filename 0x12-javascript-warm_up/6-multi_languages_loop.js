@@ -1,6 +1,7 @@
 #!/usr/bin/node
+const quotes = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 let i = 0;
-const arr = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
+while (quotes[i]) {
+  console.log(quotes[i]);
+  i++;
 }
