@@ -15,4 +15,8 @@ if __name__ == "__main__":
                          port=3306)
     cur = db.cursor()
     cur.execute("SELECT * FROM `states`")
-    [print(state) for state in c.fetchall()]
+    output = cur.fetchall()
+    for rows in output:
+        print(row)
+        cur.close()
+        db.close()
