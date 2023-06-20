@@ -28,8 +28,8 @@ if __name__ == '__main__':
     inquiry_list = []
     for row in output:
         inquiry_list.append(row[0])
-    state_str = ", ".join(query_list)
-    print(state_str)
+    print(", ".join(inquiry_list))
 
     cur.close()
+
     db.close()
