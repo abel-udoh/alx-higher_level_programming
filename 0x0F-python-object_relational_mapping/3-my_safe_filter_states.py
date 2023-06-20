@@ -25,7 +25,6 @@ if __name__ == '__main__':
     cur.execute(inquiry.format(sys.argv[4]))
     output = cur.fetchall()
     for row in output:
-        if row[1] == sys.argv[4]:
-            print(row)
+        print(row)
     cur.close()
     db.close()
