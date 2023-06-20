@@ -22,7 +22,7 @@ if __name__ == '__main__':
     cur = db.cursor()
     inquiry = """SELECT * FROM states WHERE name = %s ORDER
                 BY states.id ASC"""
-    cur.execute(inquiry.format(sys.argv[4]))
+    cur.execute(inquiry, (sys.argv[4],))
     output = cur.fetchall()
     for row in output:
         print(row)
