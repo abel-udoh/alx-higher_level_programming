@@ -18,8 +18,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     new_session = Session()
 
-    newState = session.query(State).get(2)
-    newState.name = "New Mexico"
-    new_session.add(newState)
-    new_session.commit()
-    new_session.close()
+    state = new_session.query(State).filter(State.id == 2).first()
+    if state:
+        state.name = 'New Mexico'
+        new_session.commit()
