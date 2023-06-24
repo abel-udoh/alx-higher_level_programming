@@ -18,6 +18,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     mew_session = Session()
 
-    for state, city in new_session.query(State, City).\
-            filter(State.id == City.state_id).order_by(City.id).all():
-        print("{}: ({}) {}".format(state.name, city.id, city.name))
+    for city in new_session.query(City).join(State).order_by(City.id).all():
+        print("{}: ({}) {}".format(city.state.name, city.id, city.name))
+    new_session.close()
