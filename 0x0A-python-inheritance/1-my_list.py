@@ -1,12 +1,9 @@
 #!/usr/bin/python3
+"""Defines an inherited list class MyList."""
 
-"""
-This module contains function that checks if the object
-passed is exactly an instance of the specified class
-"""
-
-
-def MyList(list):
+class MyList(list):
     """Implements sorted printing for the built-in list class."""
 
-    return type(obj) == a_class
+    def print_sorted(self):
+        """Print a list in sorted ascending order."""
+        print(sorted(self))
